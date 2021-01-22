@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/gamestyles.css">
+
+
+</head>
+<body>
+<div>
+<h2>This is a simple card game that lets you pick cards from a shuffled deck that is between 1 to 100. You will be picking 5 cards. If the total added values of the cards you picked are greater than or equal to 200, you will gain 1 point. Otherwise, you will lose 1 point. </h2>
+</div>
+
+<p>If the total added values divided by your age return an even integer, you win. But if returns an odd number, you lose. </p>
+
+<p>Exit this manual to get started. <a href="index.html">Click here</a></p>
+
+</body>
+</html>

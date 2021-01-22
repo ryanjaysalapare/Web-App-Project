@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Author: Ryan Jay Salapare 000823653
+     Created: Nov 15, 2020
+
+     HTML file that will created a form for a user to fill up then after the user submits the information, 
+     a simple card game will occur and the card game will interact with a javascript file in the background.
+-->
+
+<head>
+    <title>Simple Card Game</title>
+    <meta charset="UTF-8">
+    <script src="js/game.js"></script>
+    <link rel="stylesheet" href="css/gamestyles.css">
+
+
+    <style>
+        #intro,
+        #clickToPick,
+        #counter,
+        #tryAgain,
+        #again {
+            text-align: center;
+        }
+
+        #clickToPick {
+            margin-top: 50px;
+            margin: auto;
+        }
+
+        #game span {
+            margin-top: 100px;
+            font-weight: bold;
+        }
+
+        #counter {
+            margin-top: 100px;
+        }
+
+        #again {
+            margin-top: 70px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="container">
+        <form id="user_form">
+            <div>
+                <label for="name">Enter Your Name</label>
+                <input type="text" id="name" placeholder="Name" required>
+            </div>
+
+            <div>
+                <label for="age">Enter Your Age</label>
+                <input type="number" id="age" placeholder="Age" min="1" required>
+            </div>
+
+            <div>
+                <label for="color">Choose Your Favorite Color</label>
+                <input type="color" id="color">
+            </div>
+
+            <input type="submit" value="Submit">
+        </form>
+
+    </div>
+
+
+    <main id="game">
+        <div id="intro">
+            <h2>Welcome to the Game, <span id="username"></span>!</h2>
+            <p>Before you start, click on the Game Manual link for a more clear understanding of the game.
+                <a href="manual.html">Game Manual</a>
+            </p>
+        </div>
+
+        <div id="clickToPick">
+            <button type="button" id="pick">CLICK TO DRAW!</button>
+            <button type="button" id="pickAgain">DRAW AGAIN!</button>
+            <h3><span id="totalAdded"></span></h3>
+            <p><span id="totalOutput"></span></p>
+            <p><span id="yourAge"></span></p>
+            <p><span id="result"></span> <span id="equal"></span></p>
+        </div>
+        <div id="counter">
+            <h3><span id="winCount"></span></h3>
+            <h3><span id="loseCount"></span></h3>
+            <h1><span id="winOrLose"></span></h1>
+        </div>
+        <div id="again">
+            <button type="button" id="tryAgain"><a href="index.html">Try It Again</a></button>
+        </div>
+    </main>
+
+</body>
+
+
+</html>

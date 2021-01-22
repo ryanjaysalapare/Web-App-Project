@@ -1,0 +1,28 @@
+/* Author: Ryan Jay Salapare
+   Created: Nov 15, 2020
+
+   CSS file that is linked by index.html and game.js
+
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: lightblue;
+}
+
+#container div,
+input[type=submit] {
+    margin: 10px;
+}
+
+@media only screen and (max-width: 320px) {
+ 
+}
